@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Bienvenidos al lado oscuro</title>
+  </head>
+  <body>
+    <!-- Solo un H1 por pagina, no guiarse por el tamaño, guiarse por la jerarquia -->
+    <h1>Soy El Mas Importante</h1>
+    <h2>Soy el segundo</h2>
+    <h3>Soy el Tercero</h3>
+    <h4>Soy el cuarto</h4>
+    <h5>Soy el quinto</h5>
+    <h6>Soy el sexto</h6>
+
+    <p>Dentro de esta etiqueta van parrafos</p>
+
+    <!-- Lorem seguido de un numero permite generar un parrafo aleatorio -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+      maiores? Impedit consequatur ea porro, esse mollitia error. Distinctio
+      nemo odio commodi error nobis voluptas. Ea iste minus aspernatur magnam
+      consectetur, ut laborum debitis totam, enim voluptatibus quia. Aliquam,
+      aperiam odit.
+    </p>
+
+    <p><strong>Soy un parrafo en negrita</strong></p>
+
+    <p>
+      Soy un parrafo que usa la etiqueta br <br />
+      Para hacer el salto de linea
+      <b> A br solo lo usamos al utilizar SOLO HTML</b>
+    </p>
+
+    <!-- Enlace E Imagenes -->
+
+    <!-- target blank nos abre el link en una nueva pestaña -->
+    <a
+      href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a"
+      target="_blank"
+      >Soy un enlace</a
+    >
+    <br />
+    <p>Clickea la imagen</p>
+    <a
+      href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a"
+      target="_blank"
+    >
+      <img
+        src="https://definicion.de/wp-content/uploads/2009/12/paisaje-1.jpg"
+        alt="Imagen de Paisaje"
+      />
+      <!-- la imagen siempre debe tener el alt -->
+    </a>
+
+    <hr />
+    <!-- El hr sirve para haver lineas divisoras SOLO EN HTML -->
+
+    <h2>Lista Desordenada</h2>
+
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ol>
+
+    <h2>Lista Anidada</h2>
+
+    <ol>
+      <li>
+        Soy un elemento de una lista ordenada y adentro tengo otra lista
+        <ul>
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+      </li>
+    </ol>
+
+    <hr />
+
+    <h2>TABLAS</h2>
+
+    <table>
+      <tr>
+        <th>Lunes</th>
+        <th>Marte</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>9hs</td>
+        <td>8hs</td>
+        <td>7hs</td>
+        <td>6hs</td>
+        <td>5hs</td>
+      </tr>
+      <tr>
+        <td>9hs</td>
+        <td>8hs</td>
+        <td>7hs</td>
+        <td>6hs</td>
+        <td>5hs</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Formularios</h2>
+
+    <!-- input tipo "text" -->
+    <!-- Todo input deberia ser acompañado de un label y un ID que vinvule el input con el label, el for del label debe coincidir con el ID del input -->
+    <label for="nombre"> Nombre: </label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+
+    <br />
+
+    <label for="apellido"> Apellido: </label>
+    <input type="text" id="apellido" placeholder="Ingrese su apellido" />
+
+    <br />
+    <!-- Input de tipo "number" -->
+    <label for="edad"> Edad: </label>
+    <input type="number" id="edad" placeholder="Ingrese su edad" />
+
+    <br />
+
+    <!-- Input tipo "email" -->
+    <label for="correo"> Email: </label>
+    <input type="email" id="correo" placeholder="Ingrese su email" />
+
+    <br />
+
+    <!-- Input tipo "password" -->
+    <label for="contra"> Contraseña: </label>
+    <input
+      type="password"
+      id="contra"
+      placeholder="Ingrese su contraseña"
+      required
+    />
+
+    <br />
+
+    <!-- Input tipo "checkbox" -->
+    <label for="checkbox1"> Soy el primer Checkbox </label>
+    <input type="checkbox" id="checkbox1" />
+    <br />
+    <label for="checkbox2"> Soy el segundo Checkbox </label>
+    <input type="checkbox" id="checkbox2" checked />
+
+    <br />
+
+    <!-- Input tipo "radio", todos los input radio con el mismo name los hace compartir logica-->
+    <span>Gusto de helado favorito:</span>
+    <input type="radio" id="chocolate" name="gustos" />
+    <label for="chocolate"> Chocolate </label>
+
+    <input type="radio" id="frutilla" name="gustos" />
+    <label for="frutilla"> Frutilla </label>
+
+    <input type="radio" id="vainilla" name="gustos" />
+    <label for="vainilla"> Vainilla </label>
+
+    <br />
+
+    <!-- Select(NO es un input) -->
+    <span>Jugamos?</span>
+    <select>
+      <option value="piedra">Piedra</option>
+      <option value="papel">Papel</option>
+      <option value="tijera">Tijera</option>
+    </select>
+
+    <br />
+
+    <!-- etiqueta textarea -->
+    <label for="texto"> Soy un Area de texto </label> <br />
+    <textarea
+      id="texto"
+      cols="20"
+      rows="10"
+      placeholder="Realice una breve descripcion"
+    ></textarea>
+
+    <br />
+
+    <!-- Botones -->
+    <!-- Cumplen la misma funcion, dentro de una etiqueta form manda todo a la base de datos -->
+    <input type="submit" value="Soy un boton" />
+    <button type="submit">Soy otro boton</button>
+  </body>
+</html>
